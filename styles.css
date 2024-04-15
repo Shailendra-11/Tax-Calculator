@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form {
+    border: 1px solid gray;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 500px;
+    position: absolute;
+
+
+}
+
+.annul-income {
+    width: 320px;
+}
+
+.annul-income>label {
+    font-size: 1.2rem;
+}
+
+.annul-income>input {
+    width: 250px;
+    padding: 0.4rem;
+}
+
+.extra-income {
+    margin-top: 0.8rem;
+    width: 280px;
+}
+
+.extra-income>label {
+    font-size: 1.2rem;
+}
+
+.extra-income>input {
+    width: 300px;
+    padding: 0.4rem;
+}
+
+.age {
+    margin-top: 0.8rem;
+    width: 270px;
+}
+
+.age>label {
+    font-size: 1.2rem;
+}
+
+.age>input {
+    width: 250px;
+    padding: 0.4rem;
+}
+
+.total {
+    margin-top: 0.8rem;
+    width: 400px;
+}
+
+.total>label {
+    font-size: 1.2rem;
+}
+
+.total>input {
+    width: 250px;
+    padding: 0.4rem;
+}
+
+
+.btn {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn>button {
+    width: 100%;
+    background: rgb(60, 60, 217);
+    padding: 0.5rem;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.error {
+    display: none;
+    color: red;
+    margin-top: 5px;
+}
+
+#incomeError {
+    display: none;
+    color: red;
+    margin-top: 5px;
+}
+
+#ageError {
+    display: none;
+    color: red;
+    margin-top: 5px;
+}
+
+.deductionsError {
+    display: none;
+    color: red;
+    margin-top: 5px;
+}
+
+.result {
+    width: 600px;
+    height: 380px;
+    border: 1px solid gray;
+    margin-bottom: 5rem; 
+    position: relative;
+    top: 60px;
+    background-color:#fff;
+    display: none;
+ 
+}
+
+
+
+.main-heading {
+   margin-top: 2rem;
+   text-align: center;
+
+
+}
+
+.sub-heading {
+   margin-top: 1rem;
+   text-align: center;
+}
+
+.content {
+    margin-top: 1rem;
+    text-align: center;
+}
+.tax{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.submit-button{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.result-btn {
+    text-align: center;
+    width: 100px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(72, 72, 210);
+    color: white;
+}
+
