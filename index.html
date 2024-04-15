@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <form id="form">
+                <div class="annul-income">
+                    <label for="annul-income">Enter gross annul income</label>
+                    <input type="number" id="annul-income" placeholder="Enter gross annul income"  min="0">
+                    <div class="error" id="annulerror">Income is mandatory</div>
+                </div>
+                <div class="extra-income">
+                    <label for="extra-income">Enter extra income</label>
+                    <input type="number" name="extra-income" id="extra-income"  min="0" placeholder="Enter extra income from other source" required>
+                    <div class="error" id="incomeError">Extra is mandatory</div>
+                </div>
+                <div class="age">
+                    <label for="age">Age:</label>
+                    <select id="age" name="age">
+                        <option value="hidden">Years</option>
+                        <option value="25"> <40</option>
+                        <option value="45"> 40<=60 </option>
+                        <option value="61"> >= 60 </option>
+                    </select>
+                    <div class="error" id="ageError">Age is mandatory</div>
+                </div>
+                <div class="total">
+                    <label for="total">Enter total applicable deduction</label>
+                    <input type="number" name="total" id="total" placeholder="Enter total applicable deduction"  min="0"  >
+                       
+                    <div class="error" id="deductionsError">Deductions is mandatory</div>
+                </div>
+                <div class="btn">
+                    <button id="btn-sumbit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="result">
+            <h1 class="main-heading"></h1>
+            <h3 class="sub-heading"></h3>
+            <p class="content"></p>
+            <p class="tax"></p>
+            <div class="submit-button">
+            <button class="result-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
